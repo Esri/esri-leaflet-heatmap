@@ -116,5 +116,5 @@ limitations under the License.
 
 A copy of the license is available in the repository's [LICENSE](./LICENSE) file.
 
-[](Esri Tags: ArcGIS Web Mapping Leaflet)
+[](Esri Tags: ArcGIS Web Mapping Leaflet Heatmap)
 [](Esri Language: JavaScript)
