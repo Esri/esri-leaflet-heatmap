@@ -1,6 +1,6 @@
 {
   "name": "esri-leaflet-heatmap-feature-layer",
-  "version": "0.0.1-beta.1",
+  "version": "1.0.0-rc.1",
   "description": "Esri Leaflet plugin for visualizing Feature Layers as heatmaps with L.heat.",
   "main": "dist/esri-leaflet-heatmap-feature-layer.js",
   "devDependencies": {
@@ -37,7 +37,7 @@
   "readmeFilename": "README.md",
   "dependencies": {
     "leaflet": "^0.7.0",
-    "esri-leaflet": "0.0.1-beta.7",
+    "esri-leaflet": "1.0.0-rc.1",
     "leaflet.heat": "^0.1.0"
   }
 }
