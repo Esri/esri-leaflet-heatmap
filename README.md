@@ -3,12 +3,14 @@
 A plugin for Esri Leaflet that enables visualization of Feature Services as heatmaps using the [L.heat](https://github.com/Leaflet/Leaflet.heat) Leaflet Plugin.
 
 ### Demos
-There are [loads of demos](http://patrickarlt.github.io/esri-leaflet/examples/) showing the features of Esri Leaflet that will help you get started.
+A live demo is available on the [Esri Leaflet website](http://esri.github.io/esri-leaflet/examples/visualize-points-as-a-heatmap.html).
 
 ### Example
 Here is a quick example to get you started. Just change the paths to point to the proper libraries and go.
 
-![Demo Image](https://github.com/Esri/esri-leaflet-heatmap-feature-layer/raw/master/esri-leaflet-heatmap-feature-layer.jpg)
+<a href="http://esri.github.io/esri-leaflet/examples/visualize-points-as-a-heatmap.html">
+  <img src="https://github.com/Esri/esri-leaflet-heatmap-feature-layer/raw/master/esri-leaflet-heatmap-feature-layer.jpg" alt="Demo">
+</a>
 
 ```html
 <html>
@@ -28,7 +30,7 @@ Here is a quick example to get you started. Just change the paths to point to th
   <script src="http://cdn-geoweb.s3.amazonaws.com/esri-leaflet/0.0.1-beta.6/esri-leaflet.js"></script>
 
   <!-- Load Heatmap Feature Layer from CDN -->
-  <script src="http://cdn-geoweb.s3.amazonaws.com/esri-leaflet/0.0.1-beta.6/esri-leaflet-heatmap-feature-layer.js"></script>
+  <script src="http://cdn-geoweb.s3.amazonaws.com/esri-leaflet-heatmap-feature-layer/0.0.1-beta.1/esri-leaflet-heatmap-feature-layer.js"></script>
 
   <style>
     body {margin:0;padding:0;}
