@@ -77,7 +77,7 @@ Make Sure you have the [Grunt CLI](http://gruntjs.com/getting-started) installed
 
 * [Leaflet](http://leaflet.com) version 0.7 or higher is required and the latest version is recommended.
 * [Esri Leaflet](http://esri.github.io/esri-leaflet/) beta 5 or or higher is required but the latest version is recommended.
-* [Leaflet.markercluster](https://github.com/Leaflet/Leaflet.markercluster) version 0.4 is required.
+* [Leaflet.heat](https://github.com/Leaflet/Leaflet.heat) version 0.1.1 is required.
 
 ### Resources
 
