@@ -42,7 +42,7 @@ module.exports = function(grunt) {
         separator: '\n',
         banner: copyright,
       },
-      cluster: {
+      heatmap: {
         src: [
           'src/HeatmapFeatureLayer.js'
         ],

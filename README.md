@@ -1,4 +1,4 @@
-# Esri Leaflet Clustered Feature Layer
+# Esri Leaflet Heatmap Feature Layer
 
 A plugin for Esri Leaflet that enables visualization of Feature Services as heatmaps using the [L.heat](https://github.com/Leaflet/Leaflet.heat) Leaflet Plugin.
 
@@ -91,7 +91,7 @@ Make Sure you have the [Grunt CLI](http://gruntjs.com/getting-started) installed
 
 Find a bug or want to request a new feature?  Please let us know by submitting an [issue](https://github.com/Esri/esri-leaflet-heatmap-feature-layer/issues).
 
-Please take a look at [previous issues on Esri Leaflet](https://github.com/Esri/esri-leaflet/issues?labels=FAQ&milestone=&page=1&state=closed) and [previous issues on Esri Leaflet Clustered Feature Layer](https://github.com/Esri/esri-leaflet-heatmap-feature-layer/issues?labels=FAQ&milestone=&page=1&state=closed)that resolve common problems.
+Please take a look at [previous issues on Esri Leaflet](https://github.com/Esri/esri-leaflet/issues?labels=FAQ&milestone=&page=1&state=closed) and [previous issues on Esri Leaflet Heatmap Feature Layer](https://github.com/Esri/esri-leaflet-heatmap-feature-layer/issues?labels=FAQ&milestone=&page=1&state=closed)that resolve common problems.
 
 You can also post issues on the [GIS Stackexchange](http://gis.stackexchange.com/questions/ask?tags=esri-leaflet,leaflet) an/or the [Esri Leaflet place](https://geonet.esri.com/discussion/create.jspa?sr=pmenu&containerID=1841&containerType=700&tags=esri-leaflet,leaflet) on GeoNet.
 
