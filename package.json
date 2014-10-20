@@ -37,7 +37,7 @@
   "readmeFilename": "README.md",
   "dependencies": {
     "leaflet": "^0.7.0",
-    "esri-leaflet": "1.0.0-rc.1",
+    "esri-leaflet": "1.0.0-rc.2",
     "leaflet.heat": "^0.1.0"
   }
 }

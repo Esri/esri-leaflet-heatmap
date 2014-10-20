@@ -34,7 +34,7 @@
      */
 
     initialize: function (url, options) {
-      L.esri.Layers.FeatureManager.prototype.initialize.call(this, url, options);
+      Esri.Layers.FeatureManager.prototype.initialize.call(this, url, options);
 
       options = L.setOptions(this, options);
 
@@ -49,12 +49,12 @@
      */
 
     onAdd: function(map){
-      L.esri.Layers.FeatureManager.prototype.onAdd.call(this, map);
+      Esri.Layers.FeatureManager.prototype.onAdd.call(this, map);
       this._map.addLayer(this.heat);
     },
 
     onRemove: function(map){
-      L.esri.Layers.FeatureManager.prototype.onRemove.call(this, map);
+      Esri.Layers.FeatureManager.prototype.onRemove.call(this, map);
       this._map.removeLayer(this.heat);
     },
 
