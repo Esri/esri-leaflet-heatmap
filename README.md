@@ -1,5 +1,7 @@
 # Esri Leaflet Heatmap Feature Layer
 
+[![Build Status](https://travis-ci.org/Esri/esri-leaflet-heatmap-feature-layer.svg)](https://travis-ci.org/Esri/esri-leaflet-heatmap-feature-layer)
+
 A plugin for Esri Leaflet that enables visualization of Feature Services as heatmaps using the [L.heat](https://github.com/Leaflet/Leaflet.heat) Leaflet Plugin.
 
 ### Demos
@@ -116,5 +118,5 @@ limitations under the License.
 
 A copy of the license is available in the repository's [LICENSE](./LICENSE) file.
 
-[](Esri Tags: ArcGIS Web Mapping Leaflet)
+[](Esri Tags: ArcGIS Web Mapping Leaflet Heatmap)
 [](Esri Language: JavaScript)
