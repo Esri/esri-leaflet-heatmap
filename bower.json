@@ -1,6 +1,6 @@
 {
   "name": "esri-leaflet-heatmap-feature-layer",
-  "version": "v1.0.0-rc.3",
+  "version": "v1.0.0",
   "main": "dist/esri-leaflet-heatmap-feature-layer.js",
   "ignore": [
     "**/.*",
