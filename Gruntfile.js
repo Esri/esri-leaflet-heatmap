@@ -105,12 +105,6 @@ module.exports = function(grunt) {
     }
   });
 
-  var awsExists = fs.existsSync(process.env.HOME + '/esri-leaflet-s3.json');
-
-  if (awsExists) {
-    grunt.config.set('aws', grunt.file.readJSON(process.env.HOME + '/esri-leaflet-s3.json'));
-  }
-
   // Development Tasks
   grunt.registerTask('default', ['watch']);
   grunt.registerTask('build', ['jshint', 'karma:coverage', 'concat', 'uglify']);
