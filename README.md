@@ -29,10 +29,11 @@ Here is a quick example to get you started. Just change the paths to point to th
   <script src="https://rawgit.com/Leaflet/Leaflet.heat/gh-pages/dist/leaflet-heat.js"></script>
 
   <!-- Load Esri Leaflet from CDN -->
-  <script src="http://cdn-geoweb.s3.amazonaws.com/esri-leaflet/0.0.1-beta.6/esri-leaflet.js"></script>
+  <script src="http://cdn.jsdelivr.net/leaflet.esri/1.0.0/esri-leaflet.js"></script>
+
 
   <!-- Load Heatmap Feature Layer from CDN -->
-  <script src="http://cdn-geoweb.s3.amazonaws.com/esri-leaflet-heatmap-feature-layer/0.0.1-beta.1/esri-leaflet-heatmap-feature-layer.js"></script>
+  <script src="//cdn.jsdelivr.net/leaflet.esri.heatmap-feature-layer/1.0.2/esri-leaflet-heatmap-feature-layer.js"></script>
 
   <style>
     body {margin:0;padding:0;}
@@ -78,9 +79,9 @@ Make Sure you have the [Grunt CLI](http://gruntjs.com/getting-started) installed
 
 ### Dependencies
 
-* [Leaflet](http://leaflet.com) version 0.7 or higher is required and the latest version is recommended.
-* [Esri Leaflet](http://esri.github.io/esri-leaflet/) beta 5 or or higher is required but the latest version is recommended.
-* [Leaflet.heat](https://github.com/Leaflet/Leaflet.heat) version 0.1.1 is required.
+* [Leaflet](http://leaflet.com) version 0.7.3 is required.
+* [Esri Leaflet](http://esri.github.io/esri-leaflet/) 1.0.0 is required.
+* [Leaflet.heat](https://github.com/Leaflet/Leaflet.heat) version 0.1.3 is required.
 
 ### Resources
 
