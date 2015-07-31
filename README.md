@@ -2,13 +2,13 @@
 
 [![Build Status](https://travis-ci.org/Esri/esri-leaflet-heatmap-feature-layer.svg)](https://travis-ci.org/Esri/esri-leaflet-heatmap-feature-layer)
 
-A plugin for Esri Leaflet that enables visualization of Feature Services as heatmaps using the [L.heat](https://github.com/Leaflet/Leaflet.heat) Leaflet Plugin.
+A plugin for Esri Leaflet that enables visualization of Feature Services as heatmaps built on top of the [L.heat](https://github.com/Leaflet/Leaflet.heat) Leaflet Plugin.
 
 ### Demos
-A live demo is available on the [Esri Leaflet website](http://esri.github.io/esri-leaflet/examples/visualize-points-as-a-heatmap.html).
+A live demo can be found on the [Esri Leaflet website](http://esri.github.io/esri-leaflet/examples/visualize-points-as-a-heatmap.html).
 
 ### Example
-Here is a quick example to get you started. Just change the paths to point to the proper libraries and go.
+Here is a quick example to get you started.
 
 <a href="http://esri.github.io/esri-leaflet/examples/visualize-points-as-a-heatmap.html">
   <img src="https://github.com/Esri/esri-leaflet-heatmap-feature-layer/raw/master/esri-leaflet-heatmap-feature-layer.jpg" alt="Demo">
@@ -22,18 +22,17 @@ Here is a quick example to get you started. Just change the paths to point to th
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 
   <!-- Load Leaflet from CDN-->
-  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
-  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-1.0.0-b1/leaflet.css" />
+  <script src="http://cdn.leafletjs.com/leaflet-1.0.0-b1/leaflet.js"></script>
 
   <!-- Include Leaflet.heat via rawgit.com, do not use in production -->
   <script src="https://rawgit.com/Leaflet/Leaflet.heat/gh-pages/dist/leaflet-heat.js"></script>
 
-  <!-- Load Esri Leaflet from CDN -->
-  <script src="http://cdn.jsdelivr.net/leaflet.esri/1.0.0/esri-leaflet.js"></script>
-
+  <!-- Esri Leaflet -->
+  <script src="http://cdn.jsdelivr.net/leaflet.esri/2.0.0-beta.5/esri-leaflet.js"></script>
 
   <!-- Load Heatmap Feature Layer from CDN -->
-  <script src="//cdn.jsdelivr.net/leaflet.esri.heatmap-feature-layer/1.0.2/esri-leaflet-heatmap-feature-layer.js"></script>
+  <script src="//cdn.jsdelivr.net/leaflet.esri.heatmap-feature-layer/2.0.0-beta.1/esri-leaflet-heatmap-feature-layer.js"></script>
 
   <style>
     body {margin:0;padding:0;}
@@ -48,7 +47,7 @@ Here is a quick example to get you started. Just change the paths to point to th
   var map = L.map('map').setView([ 40.706, -73.926], 14);
 
   L.esri.basemapLayer('Gray').addTo(map);
-  L.esri.heatmapFeatureLayer({
+  L.esri.Heat.heatmapFeatureLayer({
     url: 'http://services.arcgis.com/rOo16HdIMeOBI4Mb/ArcGIS/rest/services/Graffiti_Reports/FeatureServer/0',
     radius: 12
   }).addTo(map);
