@@ -1,116 +1,94 @@
-(function (factory) {
-  // define an AMD module that relies on 'leaflet'
-  if (typeof define === 'function' && define.amd) {
-    define(['leaflet', 'esri-leaflet'], function (L, Esri) {
-      return factory(L, Esri);
-    });
+export var VERSION = '2.0.0-beta.1';
 
-  // define a common js module that relies on 'leaflet'
-  } else if (typeof module === 'object' && typeof module.exports === 'object') {
-    module.exports = factory(require('leaflet'), require('esri-leaflet'));
-  }
+import L from 'leaflet';
+import { FeatureManager } from 'esri-leaflet';
 
-  // define globals if we can find the proper place to attach them to.
-  if(window && window.L && window.L.esri) {
-    var HeatmapFeatureLayer = factory(L, L.esri);
+export var HeatmapFeatureLayer = FeatureManager.extend({
+  /**
+   * Constructor
+   */
 
-    window.L.esri.Layers.HeatmapFeatureLayer = HeatmapFeatureLayer;
+  initialize: function (options) {
+    FeatureManager.prototype.initialize.call(this, options);
 
-    window.L.esri.HeatmapFeatureLayer = HeatmapFeatureLayer;
+    options = L.setOptions(this, options);
 
-    window.L.esri.Layers.heatmapFeatureLayer = function(options){
-      return new HeatmapFeatureLayer(options);
-    };
+    this._cache = {};
+    this._active = {};
 
-    window.L.esri.heatmapFeatureLayer = function(options){
-      return new HeatmapFeatureLayer(options);
-    };
-  }
-}(function (L, Esri) {
+    this.heat = window.L.heatLayer([], options);
+  },
 
-  var HeatmapFeatureLayer = Esri.Layers.FeatureManager.extend({
-    /**
-     * Constructor
-     */
+  /**
+   * Layer Interface
+   */
 
-    initialize: function (options) {
-      Esri.Layers.FeatureManager.prototype.initialize.call(this, options);
+  onAdd: function (map) {
+    FeatureManager.prototype.onAdd.call(this, map);
+    this._map.addLayer(this.heat);
+  },
 
-      options = L.setOptions(this, options);
+  onRemove: function (map) {
+    FeatureManager.prototype.onRemove.call(this, map);
+    this._map.removeLayer(this.heat);
+  },
 
-      this._cache = {};
-      this._active = {};
+  /**
+   * Feature Managment Methods
+   */
 
-      this.heat = new window.L.heatLayer([], options);
-    },
+  createLayers: function (features) {
+    for (var i = features.length - 1; i >= 0; i--) {
+      var geojson = features[i];
+      var id = geojson.id;
+      var latlng = new L.LatLng(geojson.geometry.coordinates[1], geojson.geometry.coordinates[0]);
+      this._cache[id] = latlng;
 
-    /**
-     * Layer Interface
-     */
-
-    onAdd: function(map){
-      Esri.Layers.FeatureManager.prototype.onAdd.call(this, map);
-      this._map.addLayer(this.heat);
-    },
-
-    onRemove: function(map){
-      Esri.Layers.FeatureManager.prototype.onRemove.call(this, map);
-      this._map.removeLayer(this.heat);
-    },
-
-    /**
-     * Feature Managment Methods
-     */
-
-    createLayers: function(features){
-      for (var i = features.length - 1; i >= 0; i--) {
-        var geojson = features[i];
-        var id = geojson.id;
-        var latlng = new L.LatLng(geojson.geometry.coordinates[1], geojson.geometry.coordinates[0]);
-        this._cache[id] = latlng;
-
-        // add the layer if it is within the time bounds or our layer is not time enabled
-        if(!this._active[id] && (!this.options.timeField || (this.options.timeField && this._featureWithinTimeRange(geojson)))){
-          this._active[id] = latlng;
-          this.heat._latlngs.push(latlng);
-        }
+      // add the layer if it is within the time bounds or our layer is not time enabled
+      if (!this._active[id] && (!this.options.timeField || (this.options.timeField && this._featureWithinTimeRange(geojson)))) {
+        this._active[id] = latlng;
+        this.heat._latlngs.push(latlng);
       }
-
-      this.heat.redraw();
-    },
-
-    addLayers: function(ids){
-      for (var i = ids.length - 1; i >= 0; i--) {
-        var id = ids[i];
-        if(!this._active[id]){
-          var latlng = this._cache[id];
-          this.heat._latlngs.push(latlng);
-          this._active[id] = latlng;
-        }
-      }
-      this.heat.redraw();
-    },
-
-    removeLayers: function(ids, permanent){
-      var newLatLngs = [];
-      for (var i = ids.length - 1; i >= 0; i--) {
-        var id = ids[i];
-        if(this._active[id]){
-          delete this._active[id];
-        }
-        if(this._cache[id] && permanent){
-          delete this._cache[id];
-        }
-      }
-
-      for (var latlng in this._active){
-        newLatLngs.push(this._active[latlng]);
-      }
-
-      this.heat.setLatLngs(newLatLngs);
     }
 
-  });
+    this.heat.redraw();
+  },
 
-  return HeatmapFeatureLayer;
-}));
+  addLayers: function (ids) {
+    for (var i = ids.length - 1; i >= 0; i--) {
+      var id = ids[i];
+      if (!this._active[id]) {
+        var latlng = this._cache[id];
+        this.heat._latlngs.push(latlng);
+        this._active[id] = latlng;
+      }
+    }
+    this.heat.redraw();
+  },
+
+  removeLayers: function (ids, permanent) {
+    var newLatLngs = [];
+    for (var i = ids.length - 1; i >= 0; i--) {
+      var id = ids[i];
+      if (this._active[id]) {
+        delete this._active[id];
+      }
+      if (this._cache[id] && permanent) {
+        delete this._cache[id];
+      }
+    }
+
+    for (var latlng in this._active) {
+      newLatLngs.push(this._active[latlng]);
+    }
+
+    this.heat.setLatLngs(newLatLngs);
+  }
+
+});
+
+export function heatmapFeatureLayer (options) {
+  return new HeatmapFeatureLayer(options);
+}
+
+export default heatmapFeatureLayer;

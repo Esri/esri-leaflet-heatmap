@@ -15,6 +15,7 @@ Icon
 
 # Node
 node_modules
+npm-debug.log
 
 # Coverage
 coverage
@@ -32,4 +33,3 @@ site/build
 # Built Files
 dist/**/*.js
 dist/**/*.map
-
