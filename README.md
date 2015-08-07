@@ -59,27 +59,26 @@ Here is a quick example to get you started.
 
 ### Documentation & Examples
 
-A full [API Reference](http://esri.github.io/esri-leaflet/api-reference/) and plenty of [sample code](http://esri.github.io/esri-leaflet/examples/) can be found at the [Esri Leaflet](http://esri.github.io/esri-leaflet/) website.
+A full [API Reference](http://esri.github.io/esri-leaflet/api-reference/) and [sample code](http://esri.github.io/esri-leaflet/examples/) can be found at the [Esri Leaflet](http://esri.github.io/esri-leaflet/) website.
 
 ### Development Roadmap
 
-If you are interested in contributing to Esri Leaflet or are interetsed in seeing what is coming up next checkout the [development roadmap](https://github.com/Esri/esri-leaflet/wiki/Roadmap).
+If you are interested in contributing to Esri Leaflet or seeing what is coming up next, check out the [development roadmap](https://github.com/Esri/esri-leaflet/wiki/Roadmap).
 
 ### Development Instructions
 
-Make Sure you have the [Grunt CLI](http://gruntjs.com/getting-started) installed.
-
 1. [Fork and clone this repo](https://help.github.com/articles/fork-a-repo)
-2. `cd` into the `esri-leaflet` folder
+2. `cd` into the `esri-leaflet-heatmap-feature-layer` folder
 3. Install the dependencies with `npm install`
-4. run `grunt` from the command line. This will start watching the source files and running linting and testing commands.
-5. Open `debug/sample.html` which will load up a development environment.
-6. Make your changes and create a [pull request](https://help.github.com/articles/creating-a-pull-request)
+4. run `npm run build` to compile the raw source inside a newly created `dist` folder.
+5. run `npm test` from the command line to execute tests
+6. Open `debug/sample.html` to see local changes in action.
+6. Create a [pull request](https://help.github.com/articles/creating-a-pull-request) if you'd like to share your work.
 
 ### Dependencies
 
-* [Leaflet](http://leaflet.com) version 0.7.3 is required.
-* [Esri Leaflet](http://esri.github.io/esri-leaflet/) 1.0.0 is required.
+* Leaflet version [1.0.0-b1](https://github.com/Leaflet/Leaflet/releases/tag/v1.0.0-beta.1) (or higher) is required.
+* Esri Leaflet [2.0.0-beta.4](https://github.com/Esri/esri-leaflet/releases/tag/v2.0.0-beta.4) (or higher) is required.
 * [Leaflet.heat](https://github.com/Leaflet/Leaflet.heat) version 0.1.3 is required.
 
 ### Resources
@@ -94,7 +93,7 @@ Make Sure you have the [Grunt CLI](http://gruntjs.com/getting-started) installed
 
 Find a bug or want to request a new feature?  Please let us know by submitting an [issue](https://github.com/Esri/esri-leaflet-heatmap-feature-layer/issues).
 
-Please take a look at [previous issues on Esri Leaflet](https://github.com/Esri/esri-leaflet/issues?labels=FAQ&milestone=&page=1&state=closed) and [previous issues on Esri Leaflet Heatmap Feature Layer](https://github.com/Esri/esri-leaflet-heatmap-feature-layer/issues?labels=FAQ&milestone=&page=1&state=closed)that resolve common problems.
+Please take a look at previous issues on [Esri Leaflet](https://github.com/Esri/esri-leaflet/issues?labels=FAQ&milestone=&page=1&state=closed) and Esri Leaflet [Heatmap Feature Layer](https://github.com/Esri/esri-leaflet-heatmap-feature-layer/issues) that resolve common problems.
 
 You can also post issues on the [GIS Stackexchange](http://gis.stackexchange.com/questions/ask?tags=esri-leaflet,leaflet) an/or the [Esri Leaflet place](https://geonet.esri.com/discussion/create.jspa?sr=pmenu&containerID=1841&containerType=700&tags=esri-leaflet,leaflet) on GeoNet.
 
@@ -103,7 +102,7 @@ You can also post issues on the [GIS Stackexchange](http://gis.stackexchange.com
 Esri welcomes contributions from anyone and everyone. Please see our [guidelines for contributing](https://github.com/Esri/esri-leaflet-heatmap-feature-layer/blob/master/CONTRIBUTING.md).
 
 ### Licensing
-Copyright 2013 Esri
+Copyright 2015 Esri
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
