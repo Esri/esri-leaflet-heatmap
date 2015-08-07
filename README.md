@@ -59,7 +59,7 @@ Here is a quick example to get you started.
 
 ### Documentation & Examples
 
-A full [API Reference](http://esri.github.io/esri-leaflet/api-reference/) and plenty of [sample code](http://esri.github.io/esri-leaflet/examples/) can be found at the [Esri Leaflet](http://esri.github.io/esri-leaflet/) website.
+A full [API Reference](http://esri.github.io/esri-leaflet/api-reference/) and [sample code](http://esri.github.io/esri-leaflet/examples/) can be found at the [Esri Leaflet](http://esri.github.io/esri-leaflet/) website.
 
 ### Development Roadmap
 
@@ -93,7 +93,7 @@ If you are interested in contributing to Esri Leaflet or seeing what is coming u
 
 Find a bug or want to request a new feature?  Please let us know by submitting an [issue](https://github.com/Esri/esri-leaflet-heatmap-feature-layer/issues).
 
-Please take a look at previous issues on [Esri Leaflet](https://github.com/Esri/esri-leaflet/issues?labels=FAQ&milestone=&page=1&state=closed) and Esri Leaflet [Heatmap Feature Layer](https://github.com/Esri/esri-leaflet-heatmap-feature-layer/issues)that resolve common problems.
+Please take a look at previous issues on [Esri Leaflet](https://github.com/Esri/esri-leaflet/issues?labels=FAQ&milestone=&page=1&state=closed) and Esri Leaflet [Heatmap Feature Layer](https://github.com/Esri/esri-leaflet-heatmap-feature-layer/issues) that resolve common problems.
 
 You can also post issues on the [GIS Stackexchange](http://gis.stackexchange.com/questions/ask?tags=esri-leaflet,leaflet) an/or the [Esri Leaflet place](https://geonet.esri.com/discussion/create.jspa?sr=pmenu&containerID=1841&containerType=700&tags=esri-leaflet,leaflet) on GeoNet.
 
