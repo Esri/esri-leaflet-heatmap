@@ -61,12 +61,6 @@
   },
   "license": "Apache 2.0",
   "main": "src/HeatmapFeatureLayer.js",
-  "scripts": {
-    "prepublish": "grunt prepublish",
-    "start": "grunt default",
-    "test": "grunt test"
-  },
-  "main": "dist/esri-leaflet-heatmap.js",
   "readmeFilename": "README.md",
   "repository": {
     "type": "git",
