@@ -1,5 +1,6 @@
+/* global L beforeEach describe expect it */
 describe('HeatmapFeatureLayer', function () {
-  function createMap(){
+  function createMap () {
     // create container
     var container = document.createElement('div');
 
@@ -15,7 +16,7 @@ describe('HeatmapFeatureLayer', function () {
   var layer;
   var map = createMap();
 
-  beforeEach(function(){
+  beforeEach(function () {
     layer = L.esri.Heat.heatmapFeatureLayer({
       url: 'http://services.arcgis.com/mock/arcgis/rest/services/MockService/MockFeatureServer/0',
       timeField: 'time'
@@ -31,7 +32,7 @@ describe('HeatmapFeatureLayer', function () {
       properties: {
         time: new Date('January 1 2014').valueOf()
       }
-    },{
+    }, {
       type: 'Feature',
       id: 2,
       geometry: {
@@ -44,22 +45,22 @@ describe('HeatmapFeatureLayer', function () {
     }]);
   });
 
-  it('should create features on a heatmap', function(){
-    expect(layer.heat._latlngs).to.deep.equal([L.latLng(46,-123), L.latLng(45,-122)]);
+  it('should create features on a heatmap', function () {
+    expect(layer.heat._latlngs).to.deep.equal([L.latLng(46, -123), L.latLng(45, -122)]);
   });
 
-  it('should remove features on a heatmap', function(){
+  it('should remove features on a heatmap', function () {
     layer.removeLayers([1]);
-    expect(layer.heat._latlngs).to.deep.equal([L.latLng(46,-123)]);
+    expect(layer.heat._latlngs).to.deep.equal([L.latLng(46, -123)]);
   });
 
-  it('should add features back to a heatmap', function(){
+  it('should add features back to a heatmap', function () {
     layer.removeLayers([1]);
     layer.addLayers([1]);
-    expect(layer.heat._latlngs).to.deep.equal([L.latLng(46,-123), L.latLng(45,-122)]);
+    expect(layer.heat._latlngs).to.deep.equal([L.latLng(46, -123), L.latLng(45, -122)]);
   });
 
-  it('should not add features outside the time range', function(){
+  it('should not add features outside the time range', function () {
     layer.setTimeRange(new Date('January 1 2014'), new Date('Febuary 1 2014'));
 
     layer.createLayers([{
@@ -74,17 +75,17 @@ describe('HeatmapFeatureLayer', function () {
       }
     }]);
 
-    expect(layer.heat._latlngs).not.to.include(L.latLng( 47,-123));
+    expect(layer.heat._latlngs).not.to.include(L.latLng(47, -123));
   });
 
-  it('should be able to add itself to a map', function(){
+  it('should be able to add itself to a map', function () {
     layer.addTo(map);
 
     expect(map.hasLayer(layer)).to.equal(true);
     expect(map.hasLayer(layer.heat)).to.equal(true);
   });
 
-  it('should be remove itself from a map', function(){
+  it('should be remove itself from a map', function () {
     layer.addTo(map);
     map.removeLayer(layer);
 
