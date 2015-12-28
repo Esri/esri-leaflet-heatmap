@@ -48,4 +48,12 @@
 
 ## [Release Candidate 2]
 
-## [Release Candidate 1]
+## Release Candidate 1
+
+[2.0.0-beta.1]: https://github.com/Esri/esri-leaflet-heatmap-feature-layer/compare/v1.0.2...v2.0.0-beta.1
+[1.0.2]: https://github.com/Esri/esri-leaflet-heatmap-feature-layer/compare/v1.0.1...v1.0.2
+[1.0.1]: https://github.com/Esri/esri-leaflet-heatmap-feature-layer/compare/v1.0.0...v1.0.1
+[1.0.0]: https://github.com/Esri/esri-leaflet-heatmap-feature-layer/compare/v1.0.0-rc.4...v1.0.0
+[Release Candidate 4]: https://github.com/Esri/esri-leaflet-heatmap-feature-layer/compare/v1.0.0-rc.3...v1.0.0-rc.4
+[Release Candidate 3]: https://github.com/Esri/esri-leaflet-heatmap-feature-layer/compare/v1.0.0-rc.2...v1.0.0-rc.3
+[Release Candidate 2]: https://github.com/Esri/esri-leaflet-heatmap-feature-layer/compare/v1.0.0-rc.1...v1.0.0-rc.2
