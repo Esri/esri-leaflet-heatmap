@@ -17,7 +17,7 @@ module.exports = function (config) {
       'node_modules/leaflet.heat/dist/leaflet-heat.js',
       'node_modules/esri-leaflet/dist/esri-leaflet.js',
       'spec/**/*Spec.js',
-      'dist/esri-leaflet-heatmap-feature-layer.js'
+      'dist/esri-leaflet-heatmap.js'
     ],
 
     // list of files to exclude
