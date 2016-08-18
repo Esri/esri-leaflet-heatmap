@@ -45,7 +45,7 @@
     "format": "es6"
   },
   "license": "Apache-2.0",
-  "main": "src/HeatmapFeatureLayer.js",
+  "main": "dist/esri-leaflet-heatmap-debug.js",
   "readmeFilename": "README.md",
   "repository": {
     "type": "git",
