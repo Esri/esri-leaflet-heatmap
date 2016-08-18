@@ -68,11 +68,11 @@
   },
   "scripts": {
     "prebuild": "mkdirp dist",
-    "build": "./scripts/build.js",
+    "build": "node ./scripts/build.js",
     "lint": "semistandard src/*.js && semistandard spec/*.js",
     "prepublish": "npm run build",
     "pretest": "npm run build",
-    "release": "./scripts/release.sh",
+    "release": "node ./scripts/release.sh",
     "test": "npm run lint && karma start"
   }
 }
