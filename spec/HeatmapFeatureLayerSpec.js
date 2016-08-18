@@ -17,7 +17,7 @@ describe('HeatmapFeatureLayer', function () {
   var map = createMap();
 
   beforeEach(function () {
-    layer = L.esri.Heat.heatmapFeatureLayer({
+    layer = L.esri.Heat.featureLayer({
       url: 'http://services.arcgis.com/mock/arcgis/rest/services/MockService/MockFeatureServer/0',
       timeField: 'time'
     });

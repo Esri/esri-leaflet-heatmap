@@ -1,9 +1,9 @@
-export var VERSION = '2.0.0-beta.1';
+export { version as VERSION } from '../package.json';
 
 import L from 'leaflet';
 import { FeatureManager } from 'esri-leaflet';
 
-export var HeatmapFeatureLayer = FeatureManager.extend({
+export var FeatureLayer = FeatureManager.extend({
   /**
    * Constructor
    */
@@ -87,8 +87,8 @@ export var HeatmapFeatureLayer = FeatureManager.extend({
 
 });
 
-export function heatmapFeatureLayer (options) {
-  return new HeatmapFeatureLayer(options);
+export function featureLayer (options) {
+  return new FeatureLayer(options);
 }
 
-export default heatmapFeatureLayer;
+export default featureLayer;
