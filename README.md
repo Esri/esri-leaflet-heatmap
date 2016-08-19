@@ -22,14 +22,14 @@ Here is a quick example to get you started.
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 
   <!-- Load Leaflet from CDN-->
-  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-1.0.0-b1/leaflet.css" />
-  <script src="http://cdn.leafletjs.com/leaflet-1.0.0-b1/leaflet.js"></script>
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-1.0.0-rc.3/leaflet.css" />
+  <script src="http://cdn.leafletjs.com/leaflet-1.0.0-rc.3/leaflet.js"></script>
 
   <!-- Include Leaflet.heat via rawgit.com, do not use in production -->
   <script src="https://rawgit.com/Leaflet/Leaflet.heat/gh-pages/dist/leaflet-heat.js"></script>
 
   <!-- Esri Leaflet -->
-  <script src="http://cdn.jsdelivr.net/leaflet.esri/2.0.0-beta.5/esri-leaflet.js"></script>
+  <script src="http://cdn.jsdelivr.net/leaflet.esri/2.0.2/esri-leaflet.js"></script>
 
   <!-- Load Heatmap Feature Layer from CDN -->
   <script src="//cdn.jsdelivr.net/leaflet.esri.heatmap-feature-layer/2.0.0-beta.1/esri-leaflet-heatmap-feature-layer.js"></script>
@@ -47,8 +47,8 @@ Here is a quick example to get you started.
   var map = L.map('map').setView([ 40.706, -73.926], 14);
 
   L.esri.basemapLayer('Gray').addTo(map);
-  L.esri.Heat.heatmapFeatureLayer({
-    url: 'http://services.arcgis.com/rOo16HdIMeOBI4Mb/ArcGIS/rest/services/Graffiti_Reports/FeatureServer/0',
+  L.esri.Heat.featureLayer({
+    url: 'https://services.arcgis.com/rOo16HdIMeOBI4Mb/ArcGIS/rest/services/Graffiti_Reports/FeatureServer/0',
     radius: 12
   }).addTo(map);
 </script>
