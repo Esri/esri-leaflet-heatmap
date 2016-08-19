@@ -42,7 +42,8 @@
   "jsnext:main": "src/HeatmapFeatureLayer.js",
   "jspm": {
     "registry": "npm",
-    "format": "es6"
+    "format": "es6",
+    "main": "src/HeatmapFeatureLayer.js"
   },
   "license": "Apache-2.0",
   "main": "dist/esri-leaflet-heatmap-debug.js",
