@@ -83,6 +83,14 @@ export var FeatureLayer = FeatureManager.extend({
     }
 
     this.heat.setLatLngs(newLatLngs);
+  },
+
+  setOptions: function (options) {
+    this.heat.setOptions(options);
+  },
+
+  redraw: function () {
+    this.heat.redraw();
   }
 
 });
