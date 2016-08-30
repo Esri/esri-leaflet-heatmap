@@ -17,16 +17,6 @@
   * WebPack users no longer have to use the Babel loader.
   * Babelify with Babel 6 now works
 
-### Removed
-
-* `bindPopup` and `unbindPopup` logic have been removed from this plugin.  Equivalent functionality is available via [`L.Layer`](http://leafletjs.com/reference-1.0.0.html#layer-bindpopup) in Leaflet itself.
-
-```js
-clusterLayer.bindPopup(function (layer) {
-  return "attribute value is: " + layer.feature.properties.ATTRIBUTENAME;
-})
-```
-
 ## [2.0.0-beta.1]
 
 ### Breaking
