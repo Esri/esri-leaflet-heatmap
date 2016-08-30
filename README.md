@@ -1,8 +1,8 @@
 # Esri Leaflet Heatmap Feature Layer
 
-[![Build Status](https://travis-ci.org/Esri/esri-leaflet-heatmap-feature-layer.svg)](https://travis-ci.org/Esri/esri-leaflet-heatmap-feature-layer)
+[![Build Status](https://travis-ci.org/Esri/esri-leaflet-heatmap.svg?branch=master)](https://travis-ci.org/Esri/esri-leaflet-heatmap)
 
-A plugin for Esri Leaflet that enables visualization of Feature Services as heatmaps built on top of the [L.heat](https://github.com/Leaflet/Leaflet.heat) Leaflet Plugin.
+> A plugin for Esri Leaflet to visualize Feature Services as heatmaps built on top of the [L.heat](https://github.com/Leaflet/Leaflet.heat) Leaflet Plugin.
 
 ### Demos
 A live demo can be found on the [Esri Leaflet website](http://esri.github.io/esri-leaflet/examples/visualize-points-as-a-heatmap.html).
@@ -11,7 +11,7 @@ A live demo can be found on the [Esri Leaflet website](http://esri.github.io/esr
 Here is a quick example to get you started.
 
 <a href="http://esri.github.io/esri-leaflet/examples/visualize-points-as-a-heatmap.html">
-  <img src="https://github.com/Esri/esri-leaflet-heatmap-feature-layer/raw/master/esri-leaflet-heatmap-feature-layer.jpg" alt="Demo">
+  <img src="https://github.com/Esri/esri-leaflet-heatmap/raw/master/esri-leaflet-heatmap-feature-layer.jpg" alt="Demo">
 </a>
 
 ```html
@@ -21,18 +21,15 @@ Here is a quick example to get you started.
   <title>Points as a heatmap</title>
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 
-  <!-- Load Leaflet from CDN-->
-  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-1.0.0-rc.3/leaflet.css" />
-  <script src="http://cdn.leafletjs.com/leaflet-1.0.0-rc.3/leaflet.js"></script>
+  <!-- Load libraries from CDN -->
+  <link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
+  <script src="https://npmcdn.com/leaflet@1.0.0-rc.3"></script>
 
-  <!-- Include Leaflet.heat via rawgit.com, do not use in production -->
-  <script src="https://rawgit.com/Leaflet/Leaflet.heat/gh-pages/dist/leaflet-heat.js"></script>
+  <script src="https://npmcdn.com/leaflet.heat@0.2.0"></script>
 
-  <!-- Esri Leaflet -->
-  <script src="http://cdn.jsdelivr.net/leaflet.esri/2.0.2/esri-leaflet.js"></script>
-
-  <!-- Load Heatmap Feature Layer from CDN -->
-  <script src="//cdn.jsdelivr.net/leaflet.esri.heatmap-feature-layer/2.0.0-beta.1/esri-leaflet-heatmap-feature-layer.js"></script>
+  <!-- Esri Leaflet and Esri Leaflet Heatmap -->
+  <script src="https://npmcdn.com/esri-leaflet@2.0.2"></script>
+  <script src="https://npmcdn.com/esri-leaflet-heatmap@2.0.0"></script>
 
   <style>
     body {margin:0;padding:0;}
@@ -99,10 +96,10 @@ You can also post issues on the [GIS Stackexchange](http://gis.stackexchange.com
 
 ### Contributing
 
-Esri welcomes contributions from anyone and everyone. Please see our [guidelines for contributing](https://github.com/Esri/esri-leaflet-heatmap-feature-layer/blob/master/CONTRIBUTING.md).
+Esri welcomes contributions from anyone and everyone. Please see our [guidelines for contributing](https://github.com/Esri/esri-leaflet/blob/master/CONTRIBUTING.md).
 
 ### Licensing
-Copyright 2015 Esri
+Copyright 2016 Esri
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
