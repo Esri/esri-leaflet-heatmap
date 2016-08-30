@@ -22,14 +22,14 @@ Here is a quick example to get you started.
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 
   <!-- Load libraries from CDN -->
-  <link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
-  <script src="https://npmcdn.com/leaflet@1.0.0-rc.3"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.0.0-rc.3"></script>
 
-  <script src="https://npmcdn.com/leaflet.heat@0.2.0"></script>
+  <script src="https://unpkg.com/leaflet.heat@0.2.0"></script>
 
   <!-- Esri Leaflet and Esri Leaflet Heatmap -->
-  <script src="https://npmcdn.com/esri-leaflet@2.0.2"></script>
-  <script src="https://npmcdn.com/esri-leaflet-heatmap@2.0.0"></script>
+  <script src="https://unpkg.com/esri-leaflet@2.0.2"></script>
+  <script src="https://unpkg.com/esri-leaflet-heatmap@2.0.0"></script>
 
   <style>
     body {margin:0;padding:0;}
