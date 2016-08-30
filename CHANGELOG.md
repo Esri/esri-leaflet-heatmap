@@ -11,6 +11,7 @@
 
 ### Added
 
+* setOptions() and redraw() methods [#10](https://github.com/Esri/esri-leaflet-heatmap/issues/10)
 * The build system has been refactored to use latest Rollup and Rollup plugins.
 * Reworked bundling directives for various modules systems to resolve and simplify various issues
   * WebPack users no longer have to use the Babel loader.
