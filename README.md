@@ -5,12 +5,12 @@
 > A plugin for Esri Leaflet to visualize Feature Services as heatmaps built on top of the [L.heat](https://github.com/Leaflet/Leaflet.heat) Leaflet Plugin.
 
 ### Demos
-A live demo can be found on the [Esri Leaflet website](http://esri.github.io/esri-leaflet/examples/visualize-points-as-a-heatmap.html).
+A live demo can be found on the [Esri Leaflet website](https://esri.github.io/esri-leaflet/examples/visualize-points-as-a-heatmap.html).
 
 ### Example
 Here is a quick example to get you started.
 
-<a href="http://esri.github.io/esri-leaflet/examples/visualize-points-as-a-heatmap.html">
+<a href="https://esri.github.io/esri-leaflet/examples/visualize-points-as-a-heatmap.html">
   <img src="https://github.com/Esri/esri-leaflet-heatmap/raw/master/esri-leaflet-heatmap-feature-layer.jpg" alt="Demo">
 </a>
 
@@ -56,7 +56,7 @@ Here is a quick example to get you started.
 
 ### Documentation & Examples
 
-A full [API Reference](http://esri.github.io/esri-leaflet/api-reference/) and [sample code](http://esri.github.io/esri-leaflet/examples/) can be found at the [Esri Leaflet](http://esri.github.io/esri-leaflet/) website.
+A full [API Reference](https://esri.github.io/esri-leaflet/api-reference/) and [sample code](https://esri.github.io/esri-leaflet/examples/) can be found at the [Esri Leaflet](https://esri.github.io/esri-leaflet/) website.
 
 ### Development Roadmap
 
@@ -80,11 +80,10 @@ If you are interested in contributing to Esri Leaflet or seeing what is coming u
 
 ### Resources
 
-* [Importing Data Into Feature Services](https://developers.arcgis.com/tools/csv-to-feature-service/)
-* [ArcGIS for Developers](http://developers.arcgis.com)
-* [ArcGIS REST Services](http://resources.arcgis.com/en/help/arcgis-rest-api/)
-* [@Esri](http://twitter.com/esri)
-* [@EsriPDX](http://twitter.com/esripdx)
+* [Importing Data Into Feature Services](https://doc.arcgis.com/en/arcgis-online/manage-data/publish-features.htm#GUID-DD47C642-38B4-4645-801D-2866FE90BF73)
+* [ArcGIS for Developers](https://developers.arcgis.com/)
+* [ArcGIS REST Services](https://developers.arcgis.com/rest/)
+* [@Esri](https://twitter.com/esri)
 
 ### Issues
 
@@ -92,7 +91,7 @@ Find a bug or want to request a new feature?  Please let us know by submitting a
 
 Please take a look at previous issues on [Esri Leaflet](https://github.com/Esri/esri-leaflet/issues?labels=FAQ&milestone=&page=1&state=closed) and Esri Leaflet [Heatmap Feature Layer](https://github.com/Esri/esri-leaflet-heatmap-feature-layer/issues) that resolve common problems.
 
-You can also post issues on the [GIS Stackexchange](http://gis.stackexchange.com/questions/ask?tags=esri-leaflet,leaflet) an/or the [Esri Leaflet place](https://geonet.esri.com/discussion/create.jspa?sr=pmenu&containerID=1841&containerType=700&tags=esri-leaflet,leaflet) on GeoNet.
+You can also post issues on the [GIS Stackexchange](https://gis.stackexchange.com/questions/ask?tags=esri-leaflet,leaflet) and/or the [Esri Leaflet place](https://geonet.esri.com/discussion/create.jspa?sr=pmenu&containerID=1841&containerType=700&tags=esri-leaflet,leaflet) on GeoNet.
 
 ### Contributing
 
