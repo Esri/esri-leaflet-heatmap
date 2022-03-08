@@ -28,8 +28,8 @@ Here is a quick example to get you started.
   <script src="https://unpkg.com/leaflet.heat@0.2.0"></script>
 
   <!-- Esri Leaflet and Esri Leaflet Heatmap -->
-  <script src="https://unpkg.com/esri-leaflet@2.0.2"></script>
-  <script src="https://unpkg.com/esri-leaflet-heatmap@2.0.0"></script>
+  <script src="https://unpkg.com/esri-leaflet@3"></script>
+  <script src="https://unpkg.com/esri-leaflet-heatmap@2"></script>
 
   <style>
     body {margin:0;padding:0;}
@@ -41,12 +41,12 @@ Here is a quick example to get you started.
 <div id="map"></div>
 
 <script>
-  var map = L.map('map').setView([ 40.706, -73.926], 14);
+  var map = L.map('map').setView([41.759, -88.157], 12);
 
   L.esri.basemapLayer('Gray').addTo(map);
   L.esri.Heat.featureLayer({
-    url: 'https://services.arcgis.com/rOo16HdIMeOBI4Mb/ArcGIS/rest/services/Graffiti_Reports/FeatureServer/0',
-    radius: 12
+    url: 'https://sampleserver6.arcgisonline.com/arcgis/rest/services/CommunityAddressing/MapServer/0',
+    radius: 10
   }).addTo(map);
 </script>
 
