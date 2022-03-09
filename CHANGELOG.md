@@ -2,6 +2,16 @@
 
 ## [Unreleased][unreleased]
 
+## [2.0.1]
+
+### Updated
+
+* Updated dependencies and changed build-related settings to be consistent with Esri Leaflet ([#25](https://github.com/Esri/esri-leaflet-heatmap/pull/25))
+
+### Fixed
+
+* Do not use named exports from JSON ([info](https://webpack.js.org/migrate/5/#cleanup-the-code)) ([#25](https://github.com/Esri/esri-leaflet-heatmap/pull/25))
+
 ## [2.0.0]
 
 ### Breaking Changes
@@ -67,7 +77,8 @@
 
 ## Release Candidate 1
 
-[unreleased]: https://github.com/Esri/esri-leaflet-heatmap/compare/v2.0.0...HEAD
+[unreleased]: https://github.com/Esri/esri-leaflet-heatmap/compare/v2.0.1...HEAD
+[2.0.1]: https://github.com/Esri/esri-leaflet-heatmap/compare/v2.0.0...v2.0.1
 [2.0.0]: https://github.com/Esri/esri-leaflet-heatmap/compare/v2.0.0-beta.1...v2.0.0
 [2.0.0-beta.1]: https://github.com/Esri/esri-leaflet-heatmap/compare/v1.0.2...v2.0.0-beta.1
 [1.0.2]: https://github.com/Esri/esri-leaflet-heatmap/compare/v1.0.1...v1.0.2
