@@ -50,7 +50,7 @@
   "readmeFilename": "README.md",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com:Esri/esri-leaflet-heatmap.git"
+    "url": "git@github.com:Esri/esri-leaflet-heatmap.git"
   },
   "scripts": {
     "prebuild": "mkdirp dist",
